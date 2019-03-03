@@ -1,0 +1,40 @@
+html,
+body {
+  height: 100%;
+}
+
+.main-container{
+
+  height: 100%;
+  /*margin: 0px;
+  padding: 0px;*/
+
+}
+.main-column {
+  display: flex;
+  height: 100%;
+}
+
+.App {
+
+background: #43C6AC;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #43C6AC, #005b9f );  /* 191654 Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #43C6AC,#005b9f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+display: block;
+height: 100vh;
+width: 100%;
+}
+
+.app-content{
+ flex: 1;
+}
+
+.app-top-level {
+ display: flex;
+	flex-direction: column;
+ height: calc(100vh);
+ background: #43C6AC;  /* fallback for old browsers */
+ background: -webkit-linear-gradient(to right, #43C6AC, #005b9f );  /* 191654 Chrome 10-25, Safari 5.1-6 */
+ background: linear-gradient(to right, #43C6AC,#005b9f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
