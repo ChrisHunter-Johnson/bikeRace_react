@@ -11,6 +11,7 @@ import { Rider } from './container/rider.js';
 
 import { RiderLocation } from './container/riderLocation.js';
 import { Slogan } from './container/slogan.js';
+import {Home } from './container/home.js';
 import createBrowserHistory from 'history/createBrowserHistory';
 import appReducers from './reducers/reducers_all.js'
 import './index.css';
@@ -21,6 +22,7 @@ import * as serviceWorker from './serviceWorker';
 
 let History = createBrowserHistory();
 let store = createStore(appReducers);
+
 require('dotenv').config()
 //ReactDOM.render(<App />, document.getElementById('root'));
 //here we create store by passing all combined reducers
@@ -29,6 +31,8 @@ const render = () =>
     <Provider store={store}>
       <Router history={History}>
         <App>
+          
+          <Route path="/" exact component={Home} />
           <Route path="/flickrImg" component={FlickrImg} />
           <Route path="/rider" component={Rider} />
           <Route path="/riderMap" component={RiderLocation} />

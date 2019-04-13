@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Growl } from 'primereact/components/growl/Growl';
+//import { Growl } from 'primereact/components/growl/Growl';
 import { connect } from 'react-redux';
 import { library } from '@fortawesome/fontawesome-svg-core';
 //import { faCheckSquare, faCoffee } from '@fortawesome/free-solid-svg-icons';
@@ -21,9 +21,9 @@ class App extends Component {
   }
   render() {
     return (
-     <div className="App">
+     <div className="container-fluid App">
         <Navigation />
-        <Growl ref={(el) => { this.growl = el; }}></Growl>
+
 
         <div className="App-content">
         {this.props.children}

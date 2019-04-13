@@ -18,8 +18,16 @@ body {
 .App {
 
 background: #43C6AC;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #43C6AC, #005b9f );  /* 191654 Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #43C6AC,#005b9f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background-image:    -webkit-linear-gradient(to right, #43C6AC, #005b9f ), url(../img/CycleRace1.jpg) ;  /* 191654 Chrome 10-25, Safari 5.1-6 */
+background-image: linear-gradient(to right, #43C6AC,#005b9f),url(../img/CycleRace1.jpg)  ; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center;
+background-blend-mode: hard-light;
+display: flex;
+flex-direction: column;
+height: calc(100vh);
+
 display: block;
 height: 100vh;
 width: 100%;
@@ -37,4 +45,151 @@ width: 100%;
  background: -webkit-linear-gradient(to right, #43C6AC, #005b9f );  /* 191654 Chrome 10-25, Safari 5.1-6 */
  background: linear-gradient(to right, #43C6AC,#005b9f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+}
+
+.card-header{
+ border: 1px solid #005B9F!important ;
+ background-color: #005B9F !important;
+ color:  #ffffff !important;
+ font-weight: 600;
+}
+
+.slogan-card{
+ margin-top: 5px;
+}
+
+.map-div{
+ margin-top: 1px !important;
+}
+
+.map-intro{
+ box-sizing: border-box;
+ color: rgb(255, 255, 255);
+ font-size: 14px;
+ font-weight: 400;
+}
+
+.p-dataview-header{
+  flex-direction: column !important;
+  justify-content: center !important;
+  background-color: #23e5c9 !important;
+  color: white !important;
+  font-weight: 400 !important;
+}
+
+.lightbox-row{
+ flex-direction: column;
+ justify-content: center;
+}
+
+.p-lightbox-image-target{
+ margin-right: .5em;
+ margin-bottom: .5em;
+ flex-grow: 1;
+}
+
+.p-lightbox-main{
+ -webkit-box-pack: center;
+ -ms-flex-pack: center;
+ justify-content: center;
+}
+
+.p-justify-center {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+ .ui-button{
+  margin-top: 3em;
+ }
+
+ .filter-container {
+  text-align: center;
+ }
+
+ .rider-data > div {
+   padding: .429em;
+ }
+
+ .rider-data > div {
+  padding: .429em;
+ }
+
+ .flickr-images {
+     padding: 2rem 1rem 1rem;
+     max-width: 720px;
+     margin: 0 auto;
+ }
+
+ .flickr-images__title {
+     font-size: 2em;
+     margin: 0 0 1rem;
+ }
+
+ .flickr-images-thumbnails {
+     display: flex;
+     justify-content: space-around;
+     overflow: auto;
+     overflow-y: hidden;
+ }
+
+ .flickr-images-thumbnails__img {
+     width: 100%;
+     height: 110px;
+     border: #ededed 2px solid;
+ }
+
+ .flickr-images-main__img {
+     width: 100%;
+     border: #ededed 2px solid;
+ }
+
+
+
+.p-panel{
+ width: 150px !important;
+
+}
+body .p-dataview .p-dataview-content{
+ padding: 0.571em 1em;
+
+border: 1px solid #c8c8c8;
+
+background-color: #ffffff;
+
+color: #333333;
+
+padding: 0.571em 1em;
+
+}
+.p-card-title{
+  background-color: #005B9F !important;
+  color: white !important;
+
+}
+
+.home-card-text{
+ color: #21e3c8;
+}
+
+td{
+ color: #011664;
+}
+.p-menubar{
+ background-color: #FF7E27 !important;
+}
+.p-menuitem-text{
+ color: white !important;
+ font-weight: 500 !important;
+
+}
+
+.p-grid {
+
+
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -.5em;
+    margin-left: -.5em;
+    margin-top: -.5em;
 }

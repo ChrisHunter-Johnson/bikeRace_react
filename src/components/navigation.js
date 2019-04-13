@@ -3,7 +3,7 @@ import {Menubar} from 'primereact/components/menubar/Menubar';
 import {connect} from 'react-redux';
 import { withRouter } from 'react-router'
 
-import { showGrowl } from '../action/action.js';
+//import { showGrowl } from '../action/action.js';
 //import { showInfoMessage } from '../utils/utils.js';
 
 
@@ -15,7 +15,7 @@ class Navigation extends Component {
 	}
  render() {
   var items=[
-
+     {label: 'Home', command:()=>{this.navigateToPage( '/')}},
      {label: 'Riders',command:()=>{this.navigateToPage( '/rider')}},
      {label: 'Images',command:()=>{this.navigateToPage('/flickrImg')}},
      {label: 'Map',command:()=>{ this.navigateToPage('/riderMap')}},
@@ -26,7 +26,7 @@ return (<Menubar model={items}/>);
 }
 }
 const mapDispatchToProps = {
-  showGrowl
+  //showGrowl
 };
 Navigation = withRouter(connect(null,mapDispatchToProps)(Navigation))
 

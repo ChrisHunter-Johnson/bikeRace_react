@@ -10,7 +10,7 @@ const AsyncSlogan = asyncComponent(() => import("./container/slogan"));
 
 export default () =>
 <Switch>
-<Route path="/" exact component={AsyncHome} />
+<Route path="/home" exact component={AsyncHome} />
 <Route path="/flickrImg" exact component={AsyncFlickrImg} />
 <Route path="/rider" exact component={AsyncRider} />
 <Route path="/riderMap" exact component={AsyncRiderMap} />
