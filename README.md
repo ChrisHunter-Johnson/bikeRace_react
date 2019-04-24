@@ -1,5 +1,10 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+
+This is part or a react-with-rails application where both parts are on separate code stacks communicating via API. 
+
+See https://github.com/ChrisHunter-Johnson/oc_bikeRace_rails_api for the rails component  
+
 ## Available Scripts
 
 In the project directory, you can run:
